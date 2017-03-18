@@ -12,11 +12,7 @@ module.exports = {
 		"start_process": true,
 		"server_path": seleniumServer.path,
 		"host": "127.0.0.1",
-		"port": 4444,
-		"cli_args": {
-			"webdriver.chrome.driver": "./bin/drivers/chromedriver",
-			"webdriver.gecko.driver" : "./bin/drivers/geckodriver"
-		}
+		"port": 4444
 	},
 
 	"test_settings": {
