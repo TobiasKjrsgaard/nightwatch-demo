@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/matthewroach/nightwatch-demo#readme",
   "devDependencies": {
-    "nightwatch": "^0.9.11",
-    "selenium-server": "^2.53.0"
+    "nightwatch": "^0.9.13",
+    "selenium-server": "^3.3.1"
   }
 }
