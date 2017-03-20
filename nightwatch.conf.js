@@ -1,5 +1,3 @@
-var seleniumServer = require('selenium-server');
-
 module.exports = {
   "src_folders": ["tests"],
   "output_folder": "reports",
@@ -9,23 +7,15 @@ module.exports = {
   "globals_path": "",
 
   "selenium": {
-    "start_process": true,
-    "server_path": seleniumServer.path,
-    "host": "127.0.0.1",
-    "port": 4444
+    "start_process": false
   },
 
   "test_settings": {
     "default": {
       "launch_url": "http://dev.matthewroach.me/login/",
       "selenium_host": "localhost",
-      "selenium_port": 4444,
-      "pathname": "/wd/hub",
-      "silent": true,
-      "screenshots": {
-        "enabled": false,
-        "path": ""
-      },
+      "selenium_port": 9515,
+      "default_path_prefix": "",
       "desiredCapabilities": {
         "browserName": "chrome"
       }
