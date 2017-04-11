@@ -8,7 +8,7 @@ module.exports = {
       .verify.visible('@username')
       .verify.visible('@password')
       .verify.value( '@submit', 'Log In' )
-      .verify.elementNotPresent('@error')
+      .verify.elementNotPresent('@error');
 
     browser.end();
   },
@@ -24,7 +24,7 @@ module.exports = {
       .verify.visible('@error')
       .verify.containsText( '@error', 'Username and Password is empty' )
       .verify.valueContains( '@username', '' )
-      .verify.valueContains( '@password', '' )
+      .verify.valueContains( '@password', '' );
 
     browser.end();
   },
@@ -41,7 +41,7 @@ module.exports = {
       .verify.visible('@error')
       .verify.containsText( '@error', 'Password is empty' )
       .verify.valueContains( '@username', '' )
-      .verify.valueContains( '@password', '' )
+      .verify.valueContains( '@password', '' );
 
     browser.end();
   },
@@ -58,7 +58,7 @@ module.exports = {
       .verify.visible('@error')
       .verify.containsText( '@error', 'Username is empty' )
       .verify.valueContains( '@username', '' )
-      .verify.valueContains( '@password', '' )
+      .verify.valueContains( '@password', '' );
 
     browser.end();
   },
@@ -76,7 +76,7 @@ module.exports = {
       .verify.visible('@error')
       .verify.containsText( '@error', 'Invalid Username and/or Password' )
       .verify.valueContains( '@username', '' )
-      .verify.valueContains( '@password', '' )
+      .verify.valueContains( '@password', '' );
 
     browser.end();
   }

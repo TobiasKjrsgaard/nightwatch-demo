@@ -4,7 +4,7 @@ module.exports = {
     var login = browser.page.commandsLogin();
 
     login.navigate()
-      .validateForm()
+      .validateForm();
 
     browser.end();
   },
@@ -16,7 +16,7 @@ module.exports = {
     
     login.navigate()
       .submit()
-      .validateError('Username and Password is empty')
+      .validateError('Username and Password is empty');
 
     browser.end();
   },
@@ -29,7 +29,7 @@ module.exports = {
     login.navigate()
       .fillInForm('abc', '')
       .submit()
-      .validateError('Password is empty')
+      .validateError('Password is empty');
 
     browser.end();
   },
@@ -42,7 +42,7 @@ module.exports = {
     login.navigate()
       .fillInForm('', 'test')
       .submit()
-      .validateError('Username is empty')
+      .validateError('Username is empty');
 
     browser.end();
   },
@@ -55,7 +55,7 @@ module.exports = {
     login.navigate()
       .fillInForm('abc', '123')
       .submit()
-      .validateError('Invalid Username and/or Password')
+      .validateError('Invalid Username and/or Password');
 
     browser.end();
   }
