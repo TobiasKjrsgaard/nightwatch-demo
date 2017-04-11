@@ -4,22 +4,22 @@ var loginCommands = {
       .verify.visible('@username')
       .verify.visible('@password')
       .verify.value('@submit', 'Log In')
-      .verify.elementNotPresent('@error')
+      .verify.elementNotPresent('@error');
   },
   fillInForm: function(username, password) {
     return this.waitForElementVisible('body', 1000)
       .setValue('@username', username)
-      .setValue('@password', password)
+      .setValue('@password', password);
   },
   submit: function() {
     return this.verify.value('@submit', 'Log In')
-      .click('@submit')
+      .click('@submit');
   },
   validateError: function(errorMessage) {
     return this.verify.visible('@error')
       .verify.containsText('@error', errorMessage)
       .verify.valueContains('@username', '')
-      .verify.valueContains('@password', '')
+      .verify.valueContains('@password', '');
   }
 };
 
