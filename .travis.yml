@@ -1,6 +1,8 @@
 language: node_js
+node_js: node
+
 script:
-  - npm run test -- --env ci
+  - yarn run lint
 
 before_install:
   # fire up xvfb on port :99.0
