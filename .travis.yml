@@ -4,10 +4,21 @@ node_js: node
 script:
   - yarn run lint
 
-before_install:
-  # fire up xvfb on port :99.0
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  # set the xvfb screen size to 1280x1024x16
-  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
-  - "sleep 5"
+#
+# This part has been commented out because Travis CI is only
+# being used to run linting scripts for now.
+#
+# However, Travis CI can be used to run end-to-end tests with in a GUI
+# either by leveraging a third-party service like Sauce Labs or by
+# running an X virtual framebuffer server. For more see:
+#
+# https://docs.travis-ci.com/user/gui-and-headless-browsers/
+#
+#
+# before_install:
+#   # fire up xvfb on port :99.0
+#   - "export DISPLAY=:99.0"
+#   - "sh -e /etc/init.d/xvfb start"
+#   # set the xvfb screen size to 1280x1024x16
+#   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
+#   - "sleep 5"
