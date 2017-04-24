@@ -1,26 +1,22 @@
 {
   "name": "nightwatch-demo",
   "version": "1.0.0",
-  "description": "Simple demo's of nightwatch UI testing",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "A simple boilerplate setup for running automated end-to-end tests via Nightwatch.js",
   "scripts": {
-    "test": "./node_modules/nightwatch/bin/nightwatch"
+    "lint": "node node_modules/.bin/eslint .",
+    "fix": "node node_modules/.bin/eslint . --fix",
+    "test": "node node_modules/nightwatch/bin/nightwatch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matthewroach/nightwatch-demo.git"
+    "url": "https://github.com/TobiasKjrsgaard/nightwatch-demo.git"
   },
-  "author": "Matthew Roach",
+  "author": "Tobias Møller Kjærsgaard",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/matthewroach/nightwatch-demo/issues"
-  },
-  "homepage": "https://github.com/matthewroach/nightwatch-demo#readme",
+  "homepage": "https://github.com/TobiasKjrsgaard/nightwatch-demo",
   "devDependencies": {
-    "nightwatch": "^0.9.11",
-    "phantomjs-prebuilt": "^2.1.14",
-    "selenium-server": "^2.53.0"
+    "chromedriver": "^2.29.0",
+    "eslint": "^3.19.0",
+    "nightwatch": "^0.9.14"
   }
 }
