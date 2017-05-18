@@ -8,10 +8,6 @@
       "warn",
       2
     ],
-    "linebreak-style": [
-      "warn",
-      "unix"
-    ],
     "quotes": [
       "error",
       "single"
