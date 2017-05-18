@@ -14,7 +14,7 @@
  */
 
 var util = require('util');
-exports.assertion = function(selector, expected, msg = null) {
+exports.assertion = function(selector, expected, msg) {
 
   /**
    * The message which will be used in the test output and
