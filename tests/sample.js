@@ -12,7 +12,7 @@ module.exports = {
       .assert.title('Google')
       .assert.visible('@searchInput')
       .setValue('@searchInput', 'The Piper at the Gates of Dawn')
-      .click('@searchSubmit')
+      .submitForm('@searchForm')
       .waitForElementVisible('@results', 5000)
       .verify.containsText('@results', 'Pink Floyd');
     // Quit the browser and end test

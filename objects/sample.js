@@ -5,6 +5,9 @@
 module.exports = {
   url: 'https://google.com',
   elements: {
+    searchForm: {
+      selector: 'form'
+    },
     searchInput: {
       selector: 'input[type=text]'
     },
