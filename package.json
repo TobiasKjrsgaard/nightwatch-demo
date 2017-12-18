@@ -16,7 +16,7 @@
   "homepage": "https://github.com/TobiasKjrsgaard/nightwatch-demo",
   "devDependencies": {
     "chromedriver": "^2.29.0",
-    "eslint": "^3.19.0",
+    "eslint": "^4.13.1",
     "nightwatch": "^0.9.14"
   }
 }
