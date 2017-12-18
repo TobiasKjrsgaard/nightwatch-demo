@@ -1,7 +1,10 @@
 # Changelog
 
+## [HEAD](https://github.com/TobiasKjrsgaard/nightwatch-demo/compare/1.0.1...develop)
+* Update ESLint dev-dependency from 3.x to 4.x releases
+
 ## [1.0.1](https://github.com/TobiasKjrsgaard/nightwatch-demo/compare/1.0.0...1.0.1) (2017-12-15)
-* Add custom assertions to check page titles and count elements ([#6](­https://github.com/TobiasKjrsgaard/nightwatch-demo/pull/6))
+* Add custom assertions to check page titles and count elements ([#6](https://github.com/TobiasKjrsgaard/nightwatch-demo/pull/6))
 * Upgrade dev-dependencies to latest compatible versions
 * Update sample test case to fit the new Google markup
 
