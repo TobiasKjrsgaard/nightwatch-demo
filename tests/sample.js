@@ -5,9 +5,9 @@
 module.exports = {
   'Do a Google search for a Pink Floyd album': function (browser) {
     // Define our sample Page Object
-    var sampleObject = browser.page.sample();
+    var google = browser.page.google();
     // Perform the actual test
-    sampleObject.navigate()
+    google.navigate()
       .waitForElementVisible( 'body', 1000 )
       .assert.title('Google')
       .assert.visible('@searchInput')
