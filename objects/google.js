@@ -4,15 +4,17 @@
 
 module.exports = {
   url: 'https://google.com',
-  elements: {
-    searchForm: {
-      selector: 'form'
-    },
-    searchInput: {
-      selector: 'input[type=text]'
-    },
-    searchSubmit: {
-      selector: 'input[type=submit]'
+  sections: {
+    search: {
+      selector: 'form[role="search"]',
+      elements: {
+        input: {
+          selector: 'input[type="text"]'
+        },
+        submit: {
+          selector: 'input[type="submit"]'
+        }
+      }
     },
     results: {
       selector: '#main #res'
