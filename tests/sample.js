@@ -7,7 +7,6 @@ module.exports = {
     // Define our sample Page Object and Sections
     var google = browser.page.google();
     var search = google.section.search;
-    var results = google.section.results;
     // Navigate to the page and verify its title
     google.navigate();
     google.assert.titleContains('Google');
