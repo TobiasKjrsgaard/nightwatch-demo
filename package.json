@@ -3,9 +3,9 @@
   "version": "1.0.1",
   "description": "A simple boilerplate setup for running automated end-to-end tests via Nightwatch.js",
   "scripts": {
-    "lint": "node node_modules/eslint/bin/eslint .",
+    "lint": "node node_modules/.bin/eslint .",
     "fix": "node node_modules/.bin/eslint . --fix",
-    "test": "node node_modules/nightwatch/bin/nightwatch"
+    "test": "node node_modules/.bin/nightwatch"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,8 @@
   "license": "ISC",
   "homepage": "https://github.com/TobiasKjrsgaard/nightwatch-demo",
   "devDependencies": {
-    "chromedriver": "^2.29.0",
-    "eslint": "^3.19.0",
-    "nightwatch": "^0.9.14"
+    "chromedriver": "^75.1.0",
+    "eslint": "^6.1.0",
+    "nightwatch": "^1.1.13"
   }
 }

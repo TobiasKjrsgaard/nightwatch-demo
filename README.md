@@ -8,10 +8,9 @@ Clone or download the repository to get up and running quickly, or you could rea
 
 ### Prerequisites
 * [Node.js](https://nodejs.org/)
-* [Yarn](https://yarnpkg.com/)
 * [Chrome](https://www.google.com/chrome/index.html)
 
 ### Running
-1. Install dependencies using `yarn`
+1. Install dependencies using `npm install`
 2. Add your tests to the `tests/` directory
-3. Run tests with `yarn run test`
+3. Run tests with `npm run test`
