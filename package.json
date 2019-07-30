@@ -1,6 +1,6 @@
 {
   "name": "nightwatch-demo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple boilerplate setup for running automated end-to-end tests via Nightwatch.js",
   "scripts": {
     "lint": "node node_modules/.bin/eslint .",
