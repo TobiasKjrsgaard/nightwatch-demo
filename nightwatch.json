@@ -4,18 +4,15 @@
   "custom_commands_path": "",
   "custom_assertions_path": "assertions",
   "page_objects_path": "objects",
-  "globals_path": "nightwatch.globals.js",
 
-  "selenium": {
-    "start_process": false
+  "webdriver" : {
+    "start_process": true,
+    "server_path": "node_modules/.bin/chromedriver",
+    "port": 9515
   },
 
   "test_settings": {
     "default": {
-      "launch_url": "http://localhost/",
-      "selenium_host": "localhost",
-      "selenium_port": 9515,
-      "default_path_prefix": "",
       "desiredCapabilities": {
         "browserName": "chrome"
       }
